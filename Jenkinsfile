@@ -14,9 +14,10 @@ pipeline {
                 echo 'Testing..'
             }
         }
-        sendMail(steps)
+
         stage('Deploy') {
             steps {
+                sendMail(steps)
                 echo 'Deploying....'
             }
         }
