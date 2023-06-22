@@ -17,7 +17,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sendMail(steps)
+                restCall('test')
                 echo 'Deploying....'
             }
         }
