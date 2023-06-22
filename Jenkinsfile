@@ -14,6 +14,7 @@ pipeline {
                 echo 'Testing..'
             }
         }
+        sendMail(steps)
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
