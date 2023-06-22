@@ -5,6 +5,6 @@ def call(String message) {
     postConnection.requestMethod = 'POST'
     def form = "param1=This is request parameter."
     postConnection.doOutput = true
-    echo 'INFO: 'postConnection.responseCode
-    echo 'INFO': 'postConnection
+    echo 'INFO: ' + postConnection.responseCode + ''
+    echo 'INFO': ' + postConnection + ''
 }
